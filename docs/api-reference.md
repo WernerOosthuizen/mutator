@@ -231,55 +231,50 @@ curl --request POST \
     --header 'Content-Type: application/json' \
   --data '
 	{
-		"common_headers": {
-			"Authorization": "Bearer supersecrettokenhere"
+		"common": {
+			"headers": {
+				"Authorization": "Bearer supersecrettokenhere"
+			}
 		},
 		"endpoints": [{
-				"method": "POST",
-				"headers": {
-					"Content-Type": "application/json"
-				},
-				"url": "http://test-app:8010/results",
-				"body": {
-					"modifiers": [1,2,3,4,5,6,7]
-				}
-		},{
-				"method": "POST",
-				"headers": {
-					"Content-Type": "application/json"
-				},
-				"url": "http://test-app:8010/results",
-				"body": {
-					"modifiers": [1,2,3,4,5,6,7]
-				}
-		},{
-				"method": "POST",
-				"headers": {
-					"Content-Type": "application/json"
-				},
-				"url": "http://test-app:8010/results",
-				"body": {
-					"modifiers": [1,2,3,4,5,6,7]
-				}
-		},{
-				"method": "POST",
-				"headers": {
-					"Content-Type": "application/json"
-				},
-				"url": "http://test-app:8010/results",
-				"body": {
-					"modifiers": [1,2,3,4,5,6,7]
-				}
-		},{
-				"method": "POST",
-				"headers": {
-					"Content-Type": "application/json"
-				},
-				"url": "http://test-app:8010/results",
-				"body": {
-					"modifiers": [1,2,3,4,5,6,7]
-				}
-		}]
+            "endpoint": {
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "url": "http://test-app:8010/results",
+                "body": {
+                    "modifiers": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                }
+            }
+        },{
+            "endpoint": {
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "url": "http://test-app:8010/results",
+                "body": {
+                    "modifiers": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                }
+            }
+        }]
 }'
 ```
 
@@ -307,106 +302,14 @@ curl --request POST \
 				]
 			}
 		},
+		"config": null,
 		"batch_id": "caaebb4e90e14cde9473a7e0688794a9",
 		"state": "PENDING",
 		"state_description": "The test run is queued for processing.",
 		"passed": null,
 		"test_generated_count": null,
 		"test_result_count": null,
-		"run_attempts": 1,
-		"create_date": "2222-01-01T00:00:00",
-		"last_update_date": "2222-01-01T00:00:00"
-	},
-	{
-		"id": 237,
-		"endpoint": {
-			"method": "POST",
-			"headers": {
-				"Content-Type": "application/json",
-				"Authorization": "Bearer supersecrettokenhere"
-			},
-			"url": "http://test-app:8010/results",
-			"body": {
-				"modifiers": [
-					1,
-					2,
-					3,
-					4,
-					5,
-					6,
-					7
-				]
-			}
-		},
-		"batch_id": "caaebb4e90e14cde9473a7e0688794a9",
-		"state": "PENDING",
-		"state_description": "The test run is queued for processing.",
-		"passed": null,
-		"test_generated_count": null,
-		"test_result_count": null,
-		"run_attempts": 1,
-		"create_date": "2222-01-01T00:00:00",
-		"last_update_date": "2222-01-01T00:00:00"
-	},
-	{
-		"id": 238,
-		"endpoint": {
-			"method": "POST",
-			"headers": {
-				"Content-Type": "application/json",
-				"Authorization": "Bearer supersecrettokenhere"
-			},
-			"url": "http://test-app:8010/results",
-			"body": {
-				"modifiers": [
-					1,
-					2,
-					3,
-					4,
-					5,
-					6,
-					7
-				]
-			}
-		},
-		"batch_id": "caaebb4e90e14cde9473a7e0688794a9",
-		"state": "PENDING",
-		"state_description": "The test run is queued for processing.",
-		"passed": null,
-		"test_generated_count": null,
-		"test_result_count": null,
-		"run_attempts": 1,
-		"create_date": "2222-01-01T00:00:00",
-		"last_update_date": "2222-01-01T00:00:00"
-	},
-	{
-		"id": 239,
-		"endpoint": {
-			"method": "POST",
-			"headers": {
-				"Content-Type": "application/json",
-				"Authorization": "Bearer supersecrettokenhere"
-			},
-			"url": "http://test-app:8010/results",
-			"body": {
-				"modifiers": [
-					1,
-					2,
-					3,
-					4,
-					5,
-					6,
-					7
-				]
-			}
-		},
-		"batch_id": "caaebb4e90e14cde9473a7e0688794a9",
-		"state": "PENDING",
-		"state_description": "The test run is queued for processing.",
-		"passed": null,
-		"test_generated_count": null,
-		"test_result_count": null,
-		"run_attempts": 1,
+		"run_attempts": null,
 		"create_date": "2222-01-01T00:00:00",
 		"last_update_date": "2222-01-01T00:00:00"
 	},
@@ -431,13 +334,14 @@ curl --request POST \
 				]
 			}
 		},
+		"config": null,
 		"batch_id": "caaebb4e90e14cde9473a7e0688794a9",
 		"state": "PENDING",
 		"state_description": "The test run is queued for processing.",
 		"passed": null,
 		"test_generated_count": null,
 		"test_result_count": null,
-		"run_attempts": 1,
+		"run_attempts": null,
 		"create_date": "2222-01-01T00:00:00",
 		"last_update_date": "2222-01-01T00:00:00"
 	}
