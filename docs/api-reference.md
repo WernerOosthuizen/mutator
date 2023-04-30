@@ -170,9 +170,9 @@ Batch create test runs to fuzz an API.
 
 **Parameters**
 
-**common_headers: JSON**
+**common: JSON**
 
-The common headers that will be applied to every test run in the batch, such as an auth token. They will be merged with headers in each test run.
+The common configuration that will be applied to every test run in the batch, such as headers. Headers will be merged with the other configured headers in each test run config.
 ```
 Constraints
 - Optional
