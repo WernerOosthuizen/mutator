@@ -179,6 +179,7 @@ Constraints
 ```
 
 **endpoints: Array[Endpoints]**
+
 The list of endpoints that will be used to create multiple test runs. This is a list of requests similar to #create-a-test-run.
 
 ```
@@ -354,6 +355,7 @@ Stop a test run that is currently in a state of: PENDING, GENERATING, RUNNING.
 After the request, it might take a short amount of time before the test run actually stops.
 
 **Parameters**
+
 **test_run_id: String**
 
 The test run that must be stopped
@@ -406,6 +408,7 @@ curl --location --request DELETE 'http://localhost/v1/testruns/1'
 Get information about all test runs.
 
 **batch_id: String**
+
 The batch id that the test run is a part of. Can be used to quickly get states of all the tests in a batch run.
 
 **state: String**
@@ -471,6 +474,7 @@ curl --location --request GET 'http://localhost/v1/testruns' \
 Get information about a specific test run.
 
 **Parameters**
+
 **test_run_id: String**
 
 The target test run that you need information about.

@@ -54,7 +54,7 @@ See below for examples of the different test types.
 ### Testing Example
 If the following request is received, it will be pulled apart and each field will be tested with various values in separate requests.
 
-[See API Reference to create a test run.](./api-reference.html#create-a-test-run)  <!-- omit in toc -->
+[See API Reference to create a test run.](./api-reference.md#create-a-test-run)  <!-- omit in toc -->
 
 Received request that is to be tested:
 
@@ -222,38 +222,38 @@ If custom configuration is required, a dictionary object will also be injected (
 
 ```
 {
-		"endpoint": {
-				"method": "POST",
-				"headers": {
-						"Content-Type": "application/json"
-				},
-				"url": "http://localhost:8010/v1/results",
-				"body": {
-						"modifiers": [
-								1,
-								2,
-								3,
-								4,
-								5,
-								6,
-								7
-						]
-				}
-		},
-		"config": {
-					"validation": {
-							"StatusCode": {
-									"enabled": false,
-									"invalid_status_codes": [
-											500
-									]
-							},
-							"ElapsedTime": {
-									"enabled": true,
-									"max_elapsed_time": 0.001
-							}
-					}
-			}
+    "endpoint": {
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "url": "http://localhost:8010/v1/results",
+        "body": {
+            "modifiers": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        }
+    },
+    "config": {
+        "validation": {
+            "StatusCode": {
+                "enabled": false,
+                "invalid_status_codes": [
+                    500
+                ]
+            },
+            "ElapsedTime": {
+                "enabled": true,
+                "max_elapsed_time": 0.001
+            }
+        }
+    }
 }
 ```
 NB: The json key in the validator config must match the validator class name exactly.
@@ -299,7 +299,7 @@ If the response hash between two responses (identified by the request hash) are 
 
 ### Reporting
 
-[See API Reference for test run reports.](./api-reference.html#get-test-run-reports)
+[See API Reference for test run reports.](./api-reference.md#get-test-run-reports)
 
 ```
 NOTE:  There is little validation performed on this endpoint to allow for easy customisation of reports. You might get errors if your queries are not written correctly, or if ALL of your parameters are not passed to the API. An detailed error message should be seen in the response if this happens.
