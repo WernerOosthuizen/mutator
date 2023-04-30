@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mutator:
+    image: mutator:latest
+    restart: always
+    network_mode: "host"
+    volumes:
+      # sqlite db will be mounted here, change to something relevant
+      - /home/user/Documents/mutator_data/database:/app/data/database
+    deploy:
+      resources:
+        limits:
+          memory: 500M

@@ -1,0 +1,6 @@
+{
+    "INTEGER": "/test_repository/int_tests",
+    "STRING": "/test_repository/string_tests",
+    "DOUBLE": "/test_repository/double_tests",
+    "REMOVE": "/test_repository/remove_tests"
+}

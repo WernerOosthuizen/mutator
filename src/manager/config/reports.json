@@ -1,0 +1,5 @@
+{
+  "test_run_results_by_value": "select test_value, test_type, passed, count(id) as count from test_result where test_run_id = :test_run_id group by 1,2,3;",
+  "test_run_results_by_status_code": "select response_status_code, count(id) as count from test_result  where test_run_id = :test_run_id group by 1;",
+  "test_run_results_by_validation": "select v.type, v.passed, count(v.id) as count from test_result tr join validation v on tr.id = v.test_result_id where tr.test_run_id = :test_run_id  group by 1,2;"
+}

@@ -1,0 +1,27 @@
+{
+    "StatusCode": {
+        "comment": "Fails if status code is >= 500, or if status code is in 'invalid_status_codes' list.",
+        "comment_class_reference": "src.mutator.result_processor.validations.status_code.StatusCode",
+        "enabled": true,
+        "invalid_status_codes": [999]
+    },
+    "Regression": {
+        "comment": "Compares response against previous response of same request.",
+        "comment_class_reference": "src.mutator.result_processor.validations.regression.Regression",
+        "enabled": false,
+        "field_names": ["id","date"],
+        "strategy": "EXCLUDE_PARTIAL_MATCH"
+    },
+    "ElapsedTime": {
+        "comment": "Validates test elapsed time.",
+        "comment_class_reference": "src.mutator.result_processor.validations.elapsed_time.ElapsedTime",
+        "enabled": false,
+        "max_elapsed_time": 0.100
+    },
+    "StringMatch": {
+        "comment": "If 'match_string' is found, test fails.",
+        "comment_class_reference": "src.mutator.result_processor.validations.string_match.StringMatch",
+        "enabled": false,
+        "match_string": "test"
+    }
+}

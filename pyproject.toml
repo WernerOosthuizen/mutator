@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mutator"
+version = "0.1.0"
+description = ""
+authors = ["WernerOosthuizen"]
+
+[tool.poetry.dependencies]
+alembic = "^1.9.4"
+python = "^3.10"
+flask = "^2.2.3"
+marshmallow = "^3.14.1"
+sqlalchemy = "^2.0.4"
+requests = "^2.28.2"
+boltons = "^23.0.0"
+ratelimit = "^2.2.1"
+tenacity = "^8.2.1"
+gunicorn = "^20.1.0"
+pre-commit = "^3.1.1"
+
+[tool.poetry.dev-dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+bandit = "^1.7.4"
+
+[build-system]
+requires = ["poetry>=1.3.1"]
+build-backend = "poetry.masonry.api"
