@@ -551,7 +551,7 @@ The details of the HTTP response that was received.
 
 The validations that were run against the particular test response.
 
-[See the Analysis Documentation for more information.](./documentation.html#analysis)
+[See the Analysis Documentation for more information.](./documentation.md#analysis)
 
 Each validation consists of:
 - type:
@@ -962,7 +962,7 @@ curl --location --request GET 'http://localhost/v1/testruns/1/reports' \
 ### Run a specific test run report
 Run a specific test run report.
 
-[See the Report Documentation for more information.](./documentation.html#reporting)
+[See the Report Documentation for more information.](./documentation.md#reporting)
 
 **Parameters**
 
