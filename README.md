@@ -142,8 +142,9 @@ Run:
 Mounting the `database` folder when using sqlite is optional:
 ```
 docker run \
+--name mutator \
 -d \
--p 80:8000 \
+--net host \
 -v /home/user/Documents/data_dir_here/database:/app/data/database \
 mutator
 ```
